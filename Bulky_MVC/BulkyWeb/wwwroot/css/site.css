@@ -1,6 +1,43 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+.size-options, .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    Adjust spacing between boxes
+}
+
+.size-box, .color-box {
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .color-box:hover {
+        filter: brightness(0.8);
+        Darkens the color on hover
+    }
+
+Adjust text color for visibility on dark backgrounds
+.color-box {
+    color: white;
+}
+
+.color-box:nth-child(5) {
+    Adjust for white background color: black;
+}
+
+
+
+
+
+
+
 .divider-text:before,
 .divider-text:after {
     color: white;
